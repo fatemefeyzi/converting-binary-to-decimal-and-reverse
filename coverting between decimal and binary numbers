@@ -1,0 +1,11 @@
+def numbers():
+    a=input ('[what do you want ?] <binary > or <decimal>')
+    x = ""
+    if a == 'decimal' :
+        b = input ('Enter your binary number :')
+        x = int (str(b) ,2)
+        print ('The decimal is :' , x )
+    elif a=='binary' :
+        b = input ('Enter your decimal number :')
+        x = bin(int(b))[2:]
+        print ('The binary is ' , x)
